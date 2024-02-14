@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry genious</title>
+    <!-- Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="m-8">
+    <header>
+
+    </header>
+    <main>
+        <!-- Main container -->
+        <div class="flex flex-col md:flex-row">
+
+            <!-- shape card container -->
+            <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                <!-- Traingle Card -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="images/triangle.png"></figure>
+                    <div class="card-body">
+                        <h2 class=" text-center text-2xl">Triangle</h2>
+                        <p class="text-center text-3xl">Area(A)=0.5 x b x h</p>
+                        <div class="flex">
+                            <input id="triangle-base" class="w-24 text-2xl p-2 rounded-sm" type="number"
+                                placeholder="b">
+                            <span class="mr-4 ml-2 mt-3">cm</span>
+                            <input id="tringle-height" class="w-24 text-2xl p-2 rounded-sm" type="text" placeholder="h">
+                            <span class="mr-4 ml-2 mt-3">cm</span>
+                        </div>
+                        <div>
+                            <p class="text-2xl">Area: <span id="triangle-area"></span> <span>cm <sup>2</sup></span></p>
+                        </div>
+                        <div class="card-actions">
+                            <button onclick="caculateArea()" class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Rectangle Card -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="images/rectangle.png" /></figure>
+                    <div class="card-body">
+                        <h2 class="text-2xl text-center">Rectangle</h2>
+                        <p class="text-center text-3xl">Area(A)=w x l</p>
+                        <div class="flex">
+                            <!-- rectangle width -->
+                            <input id="rectangle-width" class="w-24  text-2xl p-2 rounded-sm" type="text"
+                                placeholder="w">
+                            <span class="mr-4 ml-2 mt-3">cm</span>
+                            <!-- rectangle length -->
+                            <input id="rectangle-length" class="w-24  text-2xl p-2 rounded-sm" type="text"
+                                placeholder="l">
+                            <span class=" mr-4 ml-2 mt-3">cm</span>
+                        </div>
+                        <div>
+                            <p class="text-2xl">Area: <span id="span-calculation-area"></span> <span>cm <sup>2</sup></span></p>
+                        </div>
+
+                        <div class="card-actions ">
+                            <button onclick="rectangleCalculation()" class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Traingle Card -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                            alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Shoes!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Traingle Card -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                            alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Shoes!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Traingle Card -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                            alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Shoes!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                            alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Shoes!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Area calculation container -->
+            <div id="area-calculation-container" class="w-96 border-2 border-gray-700 rounded-md">
+                <h3 class="text-3xl text-center p-4">Area Calculation</h3>
+            </div>
+        </div>
+    </main>
+    <script src="scripts/traingle-calculate.js"></script>
+    <script src="scripts/rectangle-calculate.js"></script>
+</body>
+
+</html>
